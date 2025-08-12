@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Locations - JTC Property Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>JTC Property Services</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="locations.html" class="nav-link active">Locations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="socials.html" class="nav-link">Socials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>Service Locations</h1>
+                <p>We proudly serve the greater Toronto area and surrounding regions</p>
+            </div>
+        </section>
+
+        <section class="locations-content">
+            <div class="container">
+                <div class="map-section">
+                    <div class="map-container">
+                        <svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Map background -->
+                            <rect width="600" height="400" fill="#e9ecef"/>
+                            
+                            <!-- Service area (red zone) -->
+                            <circle cx="300" cy="200" r="120" fill="#dc3545" opacity="0.3" stroke="#dc3545" stroke-width="2"/>
+                            
+                            <!-- Extended service area -->
+                            <circle cx="300" cy="200" r="180" fill="none" stroke="#6c757d" stroke-width="1" stroke-dasharray="5,5"/>
+                            
+                            <!-- Main city markers -->
+                            <circle cx="300" cy="200" r="5" fill="#2c5aa0"/>
+                            <circle cx="250" cy="180" r="3" fill="#2c5aa0"/>
+                            <circle cx="350" cy="220" r="3" fill="#2c5aa0"/>
+                            <circle cx="280" cy="250" r="3" fill="#2c5aa0"/>
+                            <circle cx="320" cy="160" r="3" fill="#2c5aa0"/>
+                            
+                            <!-- Roads -->
+                            <line x1="100" y1="200" x2="500" y2="200" stroke="#6c757d" stroke-width="2"/>
+                            <line x1="300" y1="50" x2="300" y2="350" stroke="#6c757d" stroke-width="2"/>
+                            
+                            <!-- Labels -->
+                            <text x="300" y="190" text-anchor="middle" fill="#2c5aa0" font-family="Arial" font-size="12" font-weight="bold">Toronto</text>
+                            <text x="50" y="20" fill="#dc3545" font-family="Arial" font-size="14" font-weight="bold">Primary Service Area</text>
+                            <text x="50" y="40" fill="#6c757d" font-family="Arial" font-size="12">Extended Service Area</text>
+                        </svg>
+                    </div>
+                    
+                    <div class="location-info">
+                        <h2>Service Area Information</h2>
+                        <p>We provide comprehensive property maintenance services throughout the Greater Toronto Area. Our primary service zone covers most of the GTA with no additional charges.</p>
+                        
+                        <div class="service-notice">
+                            <p><strong>Important:</strong> Any services beyond the <span class="red-text">red</span> zone will have a service fee of $0.39/km from our base location.</p>
+                        </div>
+                        
+                        <div class="coverage-details">
+                            <h3>Areas We Serve:</h3>
+                            <ul>
+                                <li>Toronto</li>
+                                <li>Mississauga</li>
+                                <li>Brampton</li>
+                                <li>Markham</li>
+                                <li>Vaughan</li>
+                                <li>Richmond Hill</li>
+                                <li>Oakville</li>
+                                <li>Burlington</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 JTC Property Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
