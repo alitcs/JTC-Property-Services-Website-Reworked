@@ -362,18 +362,6 @@ body {
     color: white;
 }
 
-.social-icon.instagram {
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-}
-
-.social-icon.tiktok {
-    background: #000;
-}
-
-.social-icon.facebook {
-    background: #1877f2;
-}
-
 .social-info h3 {
     color: #2c5aa0;
     margin-bottom: 0.5rem;
