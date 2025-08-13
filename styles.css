@@ -236,7 +236,8 @@ body {
     text-align: center;
 }
 
-.map-container svg {
+.map-container svg,
+.service-map {
     max-width: 100%;
     height: auto;
     border-radius: 12px;
@@ -256,8 +257,18 @@ body {
     margin: 1.5rem 0;
 }
 
+.service-notice.blue-zone {
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+}
+
 .red-text {
     color: #dc3545;
+    font-weight: bold;
+}
+
+.blue-text {
+    color: #2c5aa0;
     font-weight: bold;
 }
 
@@ -266,25 +277,41 @@ body {
     margin: 2rem 0 1rem 0;
 }
 
-.coverage-details ul {
+.coverage-details ul,
+.coverage-details-full ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
 }
 
-.coverage-details li {
+.coverage-details li,
+.coverage-details-full li {
     padding: 0.5rem 0;
     position: relative;
     padding-left: 1.5rem;
 }
 
-.coverage-details li::before {
+.coverage-details li::before,
+.coverage-details-full li::before {
     content: '✓';
     color: #28a745;
     font-weight: bold;
     position: absolute;
     left: 0;
+}
+
+.coverage-details-full {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+}
+
+.coverage-details-full h3 {
+    color: #2c5aa0;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 /* Gallery Page */
@@ -793,7 +820,8 @@ body {
         gap: 2rem;
     }
     
-    .coverage-details ul {
+    .coverage-details ul,
+    .coverage-details-full ul {
         grid-template-columns: 1fr;
     }
     

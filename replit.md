@@ -2,11 +2,12 @@
 
 ## Overview
 
-JTC Property Services is a static website for a property maintenance company serving the greater Toronto area. The site provides information about their services, showcases their work through a gallery, displays service locations, and includes contact information and quote request functionality. Built with vanilla HTML, CSS, and JavaScript, it features a responsive design with mobile navigation and form handling.
+JTC Property Services is a static website for a property maintenance company serving the greater Toronto area. The site provides information about their services, showcases their work through a gallery, displays service locations with real map images, and includes contact information and quote request functionality. Built with vanilla HTML and CSS only, it features a responsive design with CSS-only mobile navigation and form handling.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Technology preference: HTML and CSS only, no JavaScript dependencies.
 
 ## System Architecture
 
@@ -18,18 +19,19 @@ Preferred communication style: Simple, everyday language.
 
 ### Navigation System
 - **Sticky Navigation Bar**: Fixed header with company branding and main navigation links
-- **Mobile-responsive Menu**: Hamburger menu implementation for smaller screens
+- **CSS-only Mobile Menu**: Hamburger menu using CSS checkbox technique for mobile responsiveness
 - **Active State Management**: Visual indication of current page in navigation
 
 ### Form Handling
-- **Client-side Validation**: JavaScript form validation for quote requests with email and phone number validation
+- **HTML-only Forms**: Simple form submission using HTML form action to redirect to confirmation page
 - **Quote Request Flow**: Multi-step user journey from quote form to confirmation page
-- **Progressive Enhancement**: Forms work without JavaScript but enhanced with client-side validation
+- **Accessible Forms**: Built-in HTML5 validation with required fields and input types
 
 ### Content Organization
-- **Service-focused Structure**: Dedicated pages for different aspects of the business (locations, gallery, social media)
-- **Visual Communication**: SVG graphics and placeholder content for professional presentation
+- **Service-focused Structure**: Dedicated pages for different aspects of the business (locations with real maps, gallery, social media)
+- **Visual Communication**: Real map images for service areas and placeholder content for gallery
 - **Contact Integration**: Multiple touchpoints for customer engagement
+- **Dual Map System**: Limited service area (red zone with fees) and total service area (blue zone acceptance)
 
 ### Styling Architecture
 - **CSS Reset**: Consistent cross-browser styling foundation
@@ -39,14 +41,15 @@ Preferred communication style: Simple, everyday language.
 ## External Dependencies
 
 ### Core Technologies
-- **HTML5**: Semantic markup structure
-- **CSS3**: Modern styling with flexbox and responsive design features
-- **Vanilla JavaScript**: DOM manipulation and form handling without external libraries
+- **HTML5**: Semantic markup structure with form validation
+- **CSS3**: Modern styling with flexbox, responsive design, and CSS-only interactions
+- **PNG Images**: Real service area maps for accurate location representation
 
 ### No External Dependencies
-- Self-contained codebase with no third-party frameworks, libraries, or external API integrations
-- All styling and functionality implemented using native web technologies
-- SVG graphics embedded directly in HTML for scalability and performance
+- Self-contained codebase with no frameworks, libraries, or JavaScript
+- All styling and functionality implemented using native HTML and CSS
+- CSS-only mobile navigation using checkbox technique
+- Real map images for service area visualization
 
 ### Future Integration Points
 - Form submission endpoints could be added for quote processing
