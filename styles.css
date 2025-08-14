@@ -337,6 +337,16 @@ body {
     transform: translateY(-5px);
 }
 
+.mini-gallery {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    height: 20rem;
+}
+
+.gallery-image {
+}
+
 .image-placeholder {
     width: 100%;
     height: 200px;
@@ -888,4 +898,18 @@ body {
     .confirmation-section {
         padding: 40px 0;
     }
+}
+
+.contact-cta-text {
+    margin-bottom: 1.5rem;
+}
+
+.more-link {
+    color: #2c5aa0;
+    font-weight: 500;
+}
+
+.logo-image {
+    width: 60%;
+    height: auto;
 }
